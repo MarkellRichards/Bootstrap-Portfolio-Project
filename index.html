@@ -3,7 +3,194 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Additional CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Eagle Star Properties</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+     
+      <!-- Section Showcase -->
+
+      <section id="showcase" class="vertical-center">
+        <!-- <nav class="navbar navbar-expand-sm navbar-light" id='main-nav'>
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">Logo</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#eagleStarNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="eagleStarNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ></i>Contact Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                  id="residentsLink">Residents</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >Apply <span class="secondary-text">Now</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> -->
+
+        <div class="jumbotron card card-image p-0 vertical-center d-flex justify-content-center" id="showcase">
+          <nav class="navbar navbar-expand-sm navbar-light fixed-top navbar-dark" id='main-nav'>
+            <div class="container-fluid">
+              <a href="#" class="navbar-brand">Logo</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#eagleStarNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="eagleStarNavbar">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"
+                      ></i>Contact Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"
+                    id="residentsLink">Residents</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"
+                      >Apply <span class="secondary-text">Now</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+          <div class="text-white text-center py-5 px-4">
+            <div>
+              <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>South Ogden Living</strong></h2>
+  
+              <a href="#" class="btn btn-md" id="showcaseButton">Move In Today <i class="fa fa-home"></i></a>
+            </div>
+          </div>
+        </div>
+           <!-- <i href="#" class="btn btn-md" id="showcaseButton">Move In Today <i class="fa fa-home"></i></a> -->
+
+
+      </section>
+
+      <section id="welcome">
+
+      </section>
+
+      <!-- Code for Modals -->
+      <div
+      id="residentsModal"
+      class="modal fade"
+      data-backdrop="static"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title col-11 text-center">Welcome Residents</h3>
+            <button
+              class="close col"
+              type="button"
+              data-dismiss="modal"
+              id="closeModal"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <label for="residentEmail" class="font-weight-bold"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="residentEmail"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <label for="residentPassword" class="font-weight-bold"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="residentPassword"
+                    />
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-sm btn-block text-white"
+                  id="resident-submit"
+                >
+                  Sign In
+                </button>
+                <div class="col">
+                  <div class="form-check mt-1">
+                    <input type="checkbox" class="form-check-input " />
+                    <label class="form-check-label">Remember me</label>
+                  </div>
+                </div>
+                <small
+                  id="passwordHelp"
+                  class="form-text text-muted text-center"
+                  ><a href="#">Forgot your password?</a></small
+                >
+                <hr />
+                <p class="form-text text-center">Or connect with:</p>
+                <button
+                  type="text"
+                  class="btn btn-md btn-block btn-danger mt-2 text-white"
+                >
+                  <a href="#" ><i class="fa fa-google"></i></a> Google
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

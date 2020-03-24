@@ -1,0 +1,102 @@
+$color-primary: #c2e453;
+$color-black: black;
+$default-font-size: 1rem;
+$color-white: white;
+$color-secondary: #bc9a2b;
+
+/* You will not need to update any code in this section. */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5dc;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lobster', cursive;
+}
+
+#closeModal {
+  color: #bc9a2b;
+}
+
+#resident-submit {
+  background: #bc9a2b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-google {
+  color: white;
+}
+
+#resident-submit {
+  font-size: 20px;
+}
+
+.secondary-text {
+  color: #bc9a2b;
+}
+
+#main-nav {
+  background: rgba(#c2e453, 0);
+}
+
+#main-nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: 400;
+}
+.navbar-toggler:focus {
+  outline: none !important;
+}
+
+// Showcase Section
+
+.jumbotron {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/Snowy\ mountain\ range.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+}
+
+#showcaseButton {
+  background: #bc9a2b;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  color: white;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-white, 0.2);
+  }
+}
+
+// Welcome Section
+#welcome {
+  padding: 100px;
+}
