@@ -7,14 +7,8 @@ $color-secondary: #bc9a2b;
 /* You will not need to update any code in this section. */
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f5f5dc;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0ebeb;
 }
 
 #closeModal {
@@ -61,6 +55,10 @@ a {
 
 // Showcase Section
 
+#showcase {
+  position: relative;
+}
+
 .jumbotron {
   background-image: linear-gradient(
       to right,
@@ -99,4 +97,15 @@ a {
 // Welcome Section
 #welcome {
   padding: 100px;
+}
+
+.welcome-image {
+  background: url('../img/Eagle\ Star\ Properties.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
 }
