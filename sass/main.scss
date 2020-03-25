@@ -3,12 +3,17 @@ $color-black: black;
 $default-font-size: 1rem;
 $color-white: white;
 $color-secondary: #bc9a2b;
+$color-dark-blue: #272635;
 
 /* You will not need to update any code in this section. */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #f0ebeb;
+  background-color: #eee4db;
+}
+
+.bg-dark-blue {
+  background-color: $color-dark-blue !important;
 }
 
 #closeModal {
@@ -21,6 +26,10 @@ body {
 
 a {
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .fa-google {
@@ -32,7 +41,11 @@ a {
 }
 
 .secondary-text {
-  color: #bc9a2b;
+  color: #f5bd07;
+}
+
+.darkBlue-text {
+  color: #272635;
 }
 
 #main-nav {
@@ -45,12 +58,17 @@ a {
   font-weight: 400;
 }
 
-.navbar-brand {
-  color: white;
-  font-weight: 400;
-}
-.navbar-toggler:focus {
+.navbar-toggler {
+  border: none;
   outline: none !important;
+}
+
+.custom-toggler .navbar-toggler {
+  border: $color-black;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 // Showcase Section
@@ -76,7 +94,9 @@ a {
   min-height: 100vh; /* These two lines are counted as one :-)       */
 }
 
-#showcaseButton {
+.brownButton,
+.brownButton:visited,
+.brownButton:link {
   background: #bc9a2b;
   text-transform: uppercase;
   text-decoration: none;
@@ -85,18 +105,18 @@ a {
   display: inline-block;
   border: none;
   color: white;
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0.5rem 1.2rem rgba($color-black, 0.2);
+  transition: all 0.4s ease;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-white, 0.2);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
 // Welcome Section
 #welcome {
-  padding: 100px;
+  padding: 100px 10px;
 }
 
 .welcome-image {
@@ -108,4 +128,66 @@ a {
   height: 100%;
   min-height: 500px;
   overflow: hidden;
+}
+
+// Ammenities Section
+#ammenities {
+  padding: 100px 10px;
+  background-color: #e0f4fa;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background-color: #e8e9f3;
+}
+
+.darkBlueBtn,
+.darkBlueBtn:visited,
+.darkBlueBtn:link {
+  background: #272635;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  color: white;
+  box-shadow: 0 0.5rem 1.2rem rgba($color-black, 0.2);
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.site-footer {
+  padding: 50px 0;
+  background: $color-dark-blue;
+
+  .container {
+    .row {
+      .col-md {
+        a {
+          text-transform: uppercase;
+          color: white;
+          padding: 0.6rem;
+          transition: all 0.2s ease-in-out;
+          text-decoration: none;
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid $color-white;
+}
+
+.border-right {
+  border-right: 1px solid $color-white;
 }
