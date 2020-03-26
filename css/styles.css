@@ -102,9 +102,9 @@ a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   background-color: #e8e9f3; }
 
-.darkBlueBtn,
-.darkBlueBtn:visited,
-.darkBlueBtn:link {
+.btn-dark-blue,
+.btn-dark-blue:visited,
+.btn-dark-blue:link {
   background: #272635;
   text-transform: uppercase;
   text-decoration: none;
@@ -115,9 +115,9 @@ a {
   color: white;
   box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease; }
-  .darkBlueBtn:hover,
-  .darkBlueBtn:visited:hover,
-  .darkBlueBtn:link:hover {
+  .btn-dark-blue:hover,
+  .btn-dark-blue:visited:hover,
+  .btn-dark-blue:link:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -133,8 +133,27 @@ a {
     .site-footer .container .row .col-md a:hover {
       transform: translateY(-3px); }
 
+#landingContactForm {
+  background: white; }
+
+#google-maps {
+  background: black; }
+
+.landingContact {
+  padding: 100px 0; }
+
 .border-bottom {
   border-bottom: 1px solid white; }
 
 .border-right {
   border-right: 1px solid white; }
+
+#contactPage {
+  padding: 100px 0;
+  background: #e0f4fa;
+  color: black; }
+
+#contactNav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400; }

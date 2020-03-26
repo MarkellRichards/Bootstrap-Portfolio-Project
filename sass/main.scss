@@ -4,6 +4,7 @@ $default-font-size: 1rem;
 $color-white: white;
 $color-secondary: #bc9a2b;
 $color-dark-blue: #272635;
+$color-light-blue: #e0f4fa;
 
 /* You will not need to update any code in this section. */
 body {
@@ -141,9 +142,9 @@ a {
   background-color: #e8e9f3;
 }
 
-.darkBlueBtn,
-.darkBlueBtn:visited,
-.darkBlueBtn:link {
+.btn-dark-blue,
+.btn-dark-blue:visited,
+.btn-dark-blue:link {
   background: #272635;
   text-transform: uppercase;
   text-decoration: none;
@@ -184,10 +185,41 @@ a {
   }
 }
 
+//landing contact form
+
+#landingContactForm {
+  background: white;
+}
+
+#google-maps {
+  background: black;
+}
+.landingContact {
+  padding: 100px 0;
+}
+
+// utilities
+
 .border-bottom {
   border-bottom: 1px solid $color-white;
 }
 
 .border-right {
   border-right: 1px solid $color-white;
+}
+
+// Contact.html
+
+#contactPage {
+  padding: 100px 0;
+  background: $color-light-blue;
+  color: $color-black;
+}
+
+#contactNav {
+  ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
 }

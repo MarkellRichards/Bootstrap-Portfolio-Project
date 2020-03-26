@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Additional CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue" id="contactNav">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/default-monochrome-white.svg" width="400"  class="d-inline-block align-top" alt="">
+       
+          </a>
+        <button
+        class="navbar-toggler custom-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#eagleStarNavbar">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="eagleStarNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html"
+              ></i>Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+            id="residentsLink">Residents</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Apply <span class="secondary-text">Now</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      </nav>
+
+<section id="contactPage">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <h1 class="display-2">Contact Us</h1>
+                <p class="lead">Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible</p>
+            </div>
+          <div class="col-md-6 ">
+            <form class="p-3" id="contactPageForm">
+        <div class="form-row">
+          <div class="form-group col-12">
+            <label for="name" class="col-form-label">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Name">
+          </div>
+              <div class="form-group col-12">
+                <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email Address">
+          </div>
+                      <div class="form-group col-12">
+                <label for="message">Message</label>
+                        <textarea type="phone" class="form-control" id="message" placeholder="Message" rows="8"></textarea>
+          </div>
+        </div>
+              <div class="form-group col text-center">
+                         <button type="submit" class="btn btn-dark-blue btn-lg">Send Message</button>
+              </div>
+      
+      </form>
+          </div>
+      </div>
+    </section>
+
+      <!-- Footer Section -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md  d-flex justify-content-center col-md-2">
+             <a href="#">Resident Login</a>
+            </div>
+            <div class="col-md d-flex justify-content-center col-md-2">
+              <a href="#">Apply Now</a>
+             </div>
+             <div class="col-md d-flex justify-content-center col-md-2">
+              <a href="#">Terms And Conditions</a>
+             </div>
+             <div class="col-md d-flex justify-content-center col-md-2">
+              <a href="#">Privacy Policy</a>
+             </div>
+             <div class="col-md d-flex justify-content-center col-md-2">
+              <a href="contactUs.html">Contact Us</a>
+             </div>
+          </div>
+        </div>
+      </footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

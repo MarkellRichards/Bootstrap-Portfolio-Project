@@ -31,10 +31,10 @@
       <section id="showcase" class="vertical-center">
         <div class="jumbotron card card-image p-0 vertical-center d-flex justify-content-center" id="showcase">
           <nav class="navbar navbar-expand-sm fixed-top navbar-dark pt-3" id='main-nav'>
-            <div class="container-fluid">
-              <a href="#" class="navbar-brand d-none d-sm-inline-block">
-               Eagle Star Properties
-              </a>
+            <a class="navbar-brand" href="#">
+              <img src="img/default-monochrome-white.svg" width="400"  class="d-inline-block align-top" alt="">
+         
+            </a>
               <button
                 class="navbar-toggler custom-toggler"
                 type="button"
@@ -45,7 +45,7 @@
               <div class="collapse navbar-collapse" id="eagleStarNavbar">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#"
+                    <a class="nav-link" href="contactUs.html"
                       ></i>Contact Us</a
                     >
                   </li>
@@ -61,12 +61,11 @@
                   </li>
                 </ul>
               </div>
-            </div>
           </nav> 
           <div class="text-white text-center py-5 px-4">
             <div>
               <h2 class="card-title display-2 pt-3 mb-5 font-bold"><strong>South Ogden Living</strong></h2>
-              <a href="#" class="btn btn-md darkBlueBtn" id="showcaseButton">Move In Today <i class="fa fa-home"></i></a>
+              <a href="#" class="btn btn-md btn-dark-blue" id="showcaseButton">Learn More <i class="fa fa-home"></i></a>
             </div>
           </div>
         </div>
@@ -76,9 +75,9 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6">
-            <h2 class="h1-responsive">
+            <h1 class="display-4">
               Welcome to Eagle Star Properties
-            </h2>
+            </h1>
             <p class="pt-3 pr-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, impedit tenetur rem minima quos vero tempore ducimus distinctio suscipit molestiae ut doloribus ratione sed. Accusamus neque rem praesentium quasi officia. <br><br>
 
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam pariatur sapiente voluptas adipisci iusto eveniet provident totam, itaque exercitationem minima dignissimos! Corrupti totam deserunt modi consectetur, quia ad iure.</p>
@@ -88,15 +87,20 @@
           </div>
           </div>
       </section>
+
+      <!-- Amenities Section -->
       <section id="ammenities">
       <div class="container-fluid">
         <div class="row">
-         
+         <div class="col-12">
+           <h1 class="display-4 text-center mb-5">Experience the Eagle Star Lifestyle</h1>
+         </div>
           <div class="col-md-4 d-flex justify-content-center">
             <div class="card mb-5 w-100 text-center">
               <img src="img/neighborhood.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Local Ammenities</h5>
+                <h5 class="card-title">Local Amenities</h5>
+                <a href="https://www.southogdencity.com/" target="_blank" class="btn btn-md btn-dark-blue mt-2" id="showcaseButton">Learn More</a>
               </div>
             </div>
           </div>
@@ -117,12 +121,57 @@
             </div>
           </div>
           <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="btn btn-lg darkBlueBtn" id="showcaseButton">View Floor Plan <i class="fa fa-home"></i></a>
+            <a href="#" class="btn btn-lg btn-dark-blue" id="showcaseButton">View Floor Plan <i class="fa fa-home"></i></a>
           </div>
          </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+
+    <section class="landingContact">
+      <div class="container-fluid">
+        <div class="row no-gutters">
+       
+          <div class="col-md-5 ">
+            <form class="p-3" id="landingContactForm">
+        <div class="form-row">
+          <div class="col-12">
+            <h1 class="text-center mb-3">Contact Us</h1>
+            <p>Please use form below to contact us</p>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="firstName" class="col-form-label">First Name</label>
+            <input type="text" id="firstName" class="form-control" placeholder="First name">
+          </div>
+          <div class="form-group col-md-6">
+                  <label for="lastName" class="col-form-label">Last Name</label>
+            <input type="text" id="lastName" class="form-control" placeholder="Last name">
+          </div>
+              <div class="form-group col-12">
+                <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email Address">
+          </div>
+                  <div class="form-group col-12">
+                <label for="phone">Phone Number</label>
+            <input type="phone" class="form-control" id="phone" placeholder="Phone Number">
+          </div>
+                      <div class="form-group col-12">
+                <label for="message">Message</label>
+                        <textarea type="phone" class="form-control" id="message" placeholder="Message"></textarea>
+          </div>
+        </div>
+              <div class="form-group col text-center">
+                         <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+      
+      </form>
+          </div>
+          <div class="col-md-7">
+            <div class="map w-100 h-100 d-none d-md-block"></div>
+          </div>
+      </div>
+      </section>
     <!-- Footer Section -->
     <footer class="site-footer">
       <div class="container">
@@ -140,7 +189,7 @@
             <a href="#">Privacy Policy</a>
            </div>
            <div class="col-md d-flex justify-content-center col-md-2">
-            <a href="#">Contact Us</a>
+            <a href="contactUs.html">Contact Us</a>
            </div>
         </div>
       </div>
@@ -231,5 +280,11 @@
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnYyA02n4iGHauwoZKYgI0rqsPl0OBTec&callback=initMap"
+    async
+    defer
+  ></script>
+
   </body>
 </html>
