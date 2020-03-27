@@ -1,7 +1,7 @@
 /* You will not need to update any code in this section. */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   background-color: #eee4db; }
 
 .bg-dark-blue {
@@ -63,63 +63,74 @@ a {
   min-height: 100vh;
   /* These two lines are counted as one :-)       */ }
 
-.brownButton,
-.brownButton:visited,
-.brownButton:link {
-  background: #bc9a2b;
+.customBtn, .customBtn:link, .customBtn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px 30px;
   text-align: center;
   display: inline-block;
   border: none;
-  color: white;
   box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease; }
-  .brownButton:hover,
-  .brownButton:visited:hover,
-  .brownButton:link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-#welcome {
-  padding: 100px 10px; }
+.customBtn--dark-blue {
+  background-color: #272635;
+  color: white; }
 
-.welcome-image {
+.customBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: white; }
+
+.customBtn--white {
+  background-color: white;
+  color: #272635; }
+  .customBtn--white:hover {
+    color: black;
+    transform: none; }
+
+.welcome {
+  padding: 100px 0; }
+
+.welcome .container {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   background: url("../img/Eagle Star Properties.jpg");
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: cover;
+  height: 100%; }
+
+.welcome .content {
+  background: #272635;
+  color: white;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  padding: 20px 30px;
   height: 100%;
-  min-height: 500px;
   overflow: hidden; }
+  .welcome .content .pTextWrapper--1 {
+    width: 85%; }
+  .welcome .content .pTextWrapper--2 {
+    width: 75%; }
+
+.welcomeText {
+  text-align: left; }
+
+@media screen and (max-width: 767px) {
+  .welcome .content {
+    clip-path: none;
+    text-align: center; }
+    .welcome .content .pTextWrapper--1 {
+      width: 100%; }
+    .welcome .content .pTextWrapper--2 {
+      width: 100%; } }
 
 #ammenities {
   padding: 100px 10px;
-  background-color: #e0f4fa; }
+  background-color: #eec296; }
 
 .card {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   background-color: #e8e9f3; }
-
-.btn-dark-blue,
-.btn-dark-blue:visited,
-.btn-dark-blue:link {
-  background: #272635;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px 30px;
-  text-align: center;
-  display: inline-block;
-  border: none;
-  color: white;
-  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
-  transition: all 0.4s ease; }
-  .btn-dark-blue:hover,
-  .btn-dark-blue:visited:hover,
-  .btn-dark-blue:link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .site-footer {
   padding: 50px 0;
@@ -134,7 +145,8 @@ a {
       transform: translateY(-3px); }
 
 #landingContactForm {
-  background: white; }
+  background: #272635;
+  color: white; }
 
 #google-maps {
   background: black; }
@@ -150,10 +162,15 @@ a {
 
 #contactPage {
   padding: 100px 0;
-  background: #e0f4fa;
+  background: #eec296;
   color: black; }
 
 #contactNav ul li a {
   color: white;
   text-transform: uppercase;
   font-weight: 400; }
+
+#contactPageForm {
+  background: #272635;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }

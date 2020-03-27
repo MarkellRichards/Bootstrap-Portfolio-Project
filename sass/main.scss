@@ -5,11 +5,12 @@ $color-white: white;
 $color-secondary: #bc9a2b;
 $color-dark-blue: #272635;
 $color-light-blue: #e0f4fa;
+$color-light-black: #ceece3;
 
 /* You will not need to update any code in this section. */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   background-color: #eee4db;
 }
 
@@ -95,71 +96,104 @@ a {
   min-height: 100vh; /* These two lines are counted as one :-)       */
 }
 
-.brownButton,
-.brownButton:visited,
-.brownButton:link {
-  background: #bc9a2b;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px 30px;
-  text-align: center;
-  display: inline-block;
-  border: none;
-  color: white;
-  box-shadow: 0 0.5rem 1.2rem rgba($color-black, 0.2);
-  transition: all 0.4s ease;
+.customBtn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    box-shadow: 0 0.5rem 1.2rem rgba($color-black, 0.2);
+    transition: all 0.4s ease;
+  }
+
+  &--dark-blue {
+    background-color: #272635;
+    color: $color-white;
+  }
 
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    color: white;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-dark-blue;
+
+    &:hover {
+      color: $color-black;
+      transform: none;
+    }
   }
 }
 
 // Welcome Section
-#welcome {
-  padding: 100px 10px;
+.welcome {
+  padding: 100px 0;
 }
 
-.welcome-image {
+.welcome .container {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   background: url('../img/Eagle\ Star\ Properties.jpg');
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: cover;
-
   height: 100%;
-  min-height: 500px;
-  overflow: hidden;
 }
 
-// Ammenities Section
+.welcome .content {
+  background: #272635;
+  color: $color-white;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  padding: 20px 30px;
+  height: 100%;
+  overflow: hidden;
+
+  .pTextWrapper {
+    &--1 {
+      width: 85%;
+    }
+
+    &--2 {
+      width: 75%;
+    }
+  }
+}
+
+.welcomeText {
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .welcome .content {
+    clip-path: none;
+    text-align: center;
+
+    .pTextWrapper {
+      &--1 {
+        width: 100%;
+      }
+      &--2 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Amenities Section
 #ammenities {
   padding: 100px 10px;
-  background-color: #e0f4fa;
+  background-color: #eec296;
 }
 
 .card {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   background-color: #e8e9f3;
-}
-
-.btn-dark-blue,
-.btn-dark-blue:visited,
-.btn-dark-blue:link {
-  background: #272635;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px 30px;
-  text-align: center;
-  display: inline-block;
-  border: none;
-  color: white;
-  box-shadow: 0 0.5rem 1.2rem rgba($color-black, 0.2);
-  transition: all 0.4s ease;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-  }
 }
 
 .site-footer {
@@ -188,7 +222,8 @@ a {
 //landing contact form
 
 #landingContactForm {
-  background: white;
+  background: $color-dark-blue;
+  color: white;
 }
 
 #google-maps {
@@ -212,7 +247,7 @@ a {
 
 #contactPage {
   padding: 100px 0;
-  background: $color-light-blue;
+  background: #eec296;
   color: $color-black;
 }
 
@@ -222,4 +257,10 @@ a {
     text-transform: uppercase;
     font-weight: 400;
   }
+}
+
+#contactPageForm {
+  background: $color-dark-blue;
+  color: $color-white;
+  box-shadow: 0 20px 40px rgba($color-black, 0.4);
 }
