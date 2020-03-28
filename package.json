@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w",
+    "watch:all": "parallelshell \"npm run compile:sass\" \"npm run lite\""
   },
   "keywords": [
     "Real",

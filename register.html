@@ -23,7 +23,7 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Application Login</title>
+    <title>Register</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top" id="other-nav">
@@ -69,14 +69,50 @@
       <section class="applicationLogin">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 order-sm-1 order-md-0 d-flex justify-content-center mb-4">
-              <div class="col-md-12 col-lg-9">
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <div class="col-md-12 col-lg-8">
+                  <div class="div">
+                    <h1 class="display-5 font-weight-bold text-left">
+                      Apply Online Now
+                    </h1>
+                    <ul class="benefits benefits-border mb-3">
+                      <li class="benefit-list"><i class="fa fa-star"></i> 100% secure and safe to use</li>
+                      <li class="benefit-list"><i class="fa fa-star"></i> Find your new home! Apply today!</li>
+                      <li class="benefit-list"><i class="fa fa-star"></i> Applying made easy</li>
+                    </ul>
+                  </div>
+                  <div class="div">
+                    <h1 class="display-5 font-weight-bold text-left">
+                      Application Questions?
+                    </h1>
+                    <p class="benefits-text">Send us an email using our <a href="contactUs.html" class="light-blue-text" style="text-decoration: underline; color: #00000f;"><span >Contact</span></a> form and we will get back to you as soon as possible.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- right side -->
+            <div class="col-md-6 d-flex justify-content-center mb-4">
+              <div class="col-lg-9 col-md-12">
                 <form class="p-3" id="applicationLoginForm">
                   <div class="form-row">
-                    <div class="col-12">
-                      <h1 class="text-center mb-3">Login</h1>
+                    <div class="form-group col-12 border-bottom ">
+                      <h1 class="text-center mb-3 ">Start Your Application</h1>
                     </div>
+                  
+
+                  <div class="form-group col-md-6">
+                    <label for="firstName" class="col-form-label">First Name</label>
+                    <input type="text" id="firstName" class="form-control" required>
                   </div>
+                  <div class="form-group col-md-6">
+                          <label for="lastName" class="col-form-label">Last Name</label>
+                    <input type="text" id="lastName" class="form-control" required >
+                  </div>
+
+
+                  <div class="form-group col-12">
+                    <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              </div>
                         <div class="form-group col-12">
                           <label for="email">Email</label>
                       <input type="email" class="form-control" id="email" required>
@@ -86,26 +122,17 @@
                       <input type="password" class="form-control" id="password" required>
                     </div>
                     <div class="form-group col-12 text-center">
-                      <a href="#" class="form-text">Forgot your password?</a>
-                      <a href='register.html' class="form-text">Click here to register</a>
                     </div>
-               
-                      <div class="form-group col text-center">
-                        <button type="submit" class="btn customBtn customBtn--white btn-lg">Login</button>
+             
+                      <div class="form-group col-12 text-center">
+                        <button type="submit" class="btn customBtn customBtn--white btn-md">Create My Account</button>
                       </div>
+                      <div class="form-text">
+                        <p class="text-center h6">By creating your account you are agreeing to the <a href='termsandconditions.html'><span class="secondary-text">Terms and Conditions</span></a> and <a href="#"><span class="secondary-text">Privacy Policy</span></a></p>
+                      </div>
+                    </div>
                 </form>
               </div>
-              
-            </div>
-            <div class="col-md-6 order-sm-0 order-md-1 mb-4">
-              <h2 class="font-weight-bold mb-3">Applications Made Easy</h2>
-              <h5 class="benefits-text">Making an account is free and you can:</h5>
-              <ul class="benefits">
-                <li class="benefit-list"><i class="fa fa-star"></i> Save your application and log in to continue.</li>
-                <li class="benefit-list"><i class="fa fa-star"></i> Check the status of your application.</li>
-                <li class="benefit-list"><i class="fa fa-star"></i> Use your account for different applications.</li>
-              </ul>
-              <a href='register.html' class="btn btn-md customBtn--dark-blue"><i class="fa fa-arrow-right"></i> Register Now</a>
             </div>
         </div>
         </div>
@@ -114,25 +141,25 @@
     <!-- end of main section -->
 
       <!-- Footer Section -->
-     <!-- Footer Section -->
-     <footer class="site-footer">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md d-flex justify-content-center">
-            <a href="#">Apply Now</a>
-           </div>
-           <div class="col-md d-flex justify-content-center">
-            <a href="termsandconditions.html">Terms And Conditions</a>
-           </div>
-           <div class="col-md d-flex justify-content-center">
-            <a href="privacy.html">Privacy Policy</a>
-           </div>
-           <div class="col-md d-flex justify-content-center">
-            <a href="contactUs.html">Contact Us</a>
-           </div>
+       <!-- Footer Section -->
+       <footer class="site-footer">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md d-flex justify-content-center">
+              <a href="applicationLogin.html">Apply Now</a>
+             </div>
+             <div class="col-md d-flex justify-content-center">
+              <a href="termsandconditions.html">Terms And Conditions</a>
+             </div>
+             <div class="col-md d-flex justify-content-center">
+              <a href="privacy.html">Privacy Policy</a>
+             </div>
+             <div class="col-md d-flex justify-content-center">
+              <a href="contactUs.html">Contact Us</a>
+             </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
     <!-- Code for Modals -->
     <div

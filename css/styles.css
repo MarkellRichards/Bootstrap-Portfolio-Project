@@ -7,13 +7,20 @@ body {
 .bg-dark-blue {
   background-color: #272635 !important; }
 
+.weight-400 {
+  font-weight: 400; }
+
+.weight-700 {
+  font-weight: 700; }
+
 #closeModal {
-  color: #bc9a2b; }
+  color: #f5bd07; }
 
 a {
-  text-decoration: none; }
-  a:focus {
-    outline: none; }
+  text-decoration: none;
+  cursor: pointer; }
+  a:focus, a:hover {
+    text-decoration: none; }
 
 .fa-google {
   color: white; }
@@ -21,8 +28,11 @@ a {
 .secondary-text {
   color: #f5bd07; }
 
-.darkBlue-text {
+.dark-blue-text {
   color: #272635; }
+
+.light-blue-text {
+  color: #e0f4fa; }
 
 #main-nav ul li a {
   color: white;
@@ -65,23 +75,25 @@ a {
   display: inline-block;
   border: none;
   box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
-  transition: all 0.4s ease; }
+  transition: all 0.2s ease; }
 
 .customBtn--dark-blue {
   background-color: #272635;
   color: white;
-  transition: all .3s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
   .customBtn--dark-blue:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    color: white; }
+    color: #272635;
+    background-color: #f5bd07; }
 
 .customBtn--white {
   background-color: white;
   color: #272635; }
   .customBtn--white:hover {
-    color: black;
-    transform: none; }
+    color: #272635;
+    transform: none;
+    background-color: #f5bd07; }
 
 .welcome {
   padding: 100px 0; }
@@ -182,16 +194,26 @@ a {
   background-position: 50% 15%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 250px;
   border-bottom: 3px solid #272635; }
 
 .benefits {
   margin-left: 10px;
   list-style: none;
   font-weight: 700; }
+  .benefits-border {
+    border-bottom: 1px solid black; }
 
 .benefits-text {
   font-weight: 700; }
 
 .benefit-list {
   padding: 10px 0; }
+
+#terms {
+  background: white;
+  padding: 50px 0; }
+
+#privacy {
+  background: white;
+  padding: 50px 0; }

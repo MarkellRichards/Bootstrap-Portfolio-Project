@@ -2,7 +2,7 @@ $color-primary: #c2e453;
 $color-black: black;
 $default-font-size: 1rem;
 $color-white: white;
-$color-secondary: #bc9a2b;
+$color-secondary: #f5bd07;
 $color-dark-blue: #272635;
 $color-light-blue: #e0f4fa;
 $color-light-black: #ceece3;
@@ -18,15 +18,25 @@ body {
   background-color: $color-dark-blue !important;
 }
 
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
 #closeModal {
-  color: #bc9a2b;
+  color: $color-secondary;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 
-  &:focus {
-    outline: none;
+  &:focus,
+  &:hover {
+    text-decoration: none;
   }
 }
 
@@ -38,10 +48,13 @@ a {
   color: #f5bd07;
 }
 
-.darkBlue-text {
+.dark-blue-text {
   color: #272635;
 }
 
+.light-blue-text {
+  color: $color-light-blue;
+}
 
 #main-nav ul li a {
   color: white;
@@ -49,7 +62,7 @@ a {
   font-weight: 400;
 }
 
-#other-nav ul li a{
+#other-nav ul li a {
   color: white;
   text-transform: uppercase;
   font-weight: 400;
@@ -73,17 +86,15 @@ a {
 #showcase {
   position: relative;
   background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ),
-  url('../img/Snowy\ mountain\ range.jpg');
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/Snowy\ mountain\ range.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-
-
 
 .vertical-center {
   min-height: 100%; /* Fallback for browsers do NOT support vh unit */
@@ -101,30 +112,30 @@ background-size: cover;
     display: inline-block;
     border: none;
     box-shadow: 0 0.5rem 1.2rem rgba($color-black, 0.2);
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
   }
 
   &--dark-blue {
     background-color: #272635;
     color: $color-white;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-      color: white;
+      color: $color-dark-blue;
+      background-color: $color-secondary;
     }
   }
-
-  
 
   &--white {
     background-color: $color-white;
     color: $color-dark-blue;
 
     &:hover {
-      color: $color-black;
+      color: $color-dark-blue;
       transform: none;
+      background-color: $color-secondary;
     }
   }
 }
@@ -257,7 +268,7 @@ background-size: cover;
 .applicationLogin {
   // height: 100vh;
   background: #eec296;
-  padding: 100px 0 ;
+  padding: 100px 0;
 }
 
 #applicationLoginForm {
@@ -268,10 +279,8 @@ background-size: cover;
   a {
     color: #f5bd07;
     text-decoration: none;
-    
   }
 }
-
 
 .applicationImg {
   background: url('../img/More\ Snowy\ mountain\ range.jpg');
@@ -279,7 +288,7 @@ background-size: cover;
   background-position: 50% 15%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 250px;
   border-bottom: 3px solid $color-dark-blue;
 }
 
@@ -287,6 +296,10 @@ background-size: cover;
   margin-left: 10px;
   list-style: none;
   font-weight: 700;
+
+  &-border {
+    border-bottom: 1px solid $color-black;
+  }
 }
 
 .benefits-text {
@@ -294,4 +307,14 @@ background-size: cover;
 }
 .benefit-list {
   padding: 10px 0;
+}
+
+#terms {
+  background: $color-white;
+  padding: 50px 0;
+}
+
+#privacy {
+  background: $color-white;
+  padding: 50px 0;
 }
