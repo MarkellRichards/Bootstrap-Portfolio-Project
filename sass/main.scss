@@ -22,10 +22,6 @@ body {
   color: #bc9a2b;
 }
 
-#resident-submit {
-  background: #bc9a2b;
-}
-
 a {
   text-decoration: none;
 
@@ -38,10 +34,6 @@ a {
   color: white;
 }
 
-#resident-submit {
-  font-size: 20px;
-}
-
 .secondary-text {
   color: #f5bd07;
 }
@@ -50,11 +42,14 @@ a {
   color: #272635;
 }
 
-#main-nav {
-  background: rgba(#c2e453, 0);
-}
 
 #main-nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#other-nav ul li a{
   color: white;
   text-transform: uppercase;
   font-weight: 400;
@@ -70,26 +65,25 @@ a {
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 // Showcase Section
 
 #showcase {
   position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url('../img/Snowy\ mountain\ range.jpg');
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
 }
 
-.jumbotron {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url('../img/Snowy\ mountain\ range.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
+
 
 .vertical-center {
   min-height: 100%; /* Fallback for browsers do NOT support vh unit */
@@ -113,13 +107,16 @@ a {
   &--dark-blue {
     background-color: #272635;
     color: $color-white;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      color: white;
+    }
   }
 
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    color: white;
-  }
+  
 
   &--white {
     background-color: $color-white;
@@ -251,14 +248,6 @@ a {
   color: $color-black;
 }
 
-#contactNav {
-  ul li a {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-}
-
 #contactPageForm {
   background: $color-dark-blue;
   color: $color-white;
@@ -266,6 +255,43 @@ a {
 }
 
 .applicationLogin {
-  padding: 100px 0;
+  // height: 100vh;
   background: #eec296;
+  padding: 100px 0 ;
+}
+
+#applicationLoginForm {
+  background: $color-dark-blue;
+  color: white;
+  box-shadow: 0 20px 40px rgba($color-black, 0.4);
+
+  a {
+    color: #f5bd07;
+    text-decoration: none;
+    
+  }
+}
+
+
+.applicationImg {
+  background: url('../img/More\ Snowy\ mountain\ range.jpg');
+  background-attachment: scroll;
+  background-position: 50% 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-bottom: 3px solid $color-dark-blue;
+}
+
+.benefits {
+  margin-left: 10px;
+  list-style: none;
+  font-weight: 700;
+}
+
+.benefits-text {
+  font-weight: 700;
+}
+.benefit-list {
+  padding: 10px 0;
 }

@@ -26,7 +26,7 @@
     <title>Contact Page</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue" id="contactNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue" id="other-nav">
         <a class="navbar-brand" href="index.html">
             <img src="img/default-monochrome-white.svg" width="400"  class="d-inline-block align-top" alt="">
        
@@ -141,8 +141,7 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-sm btn-block text-white"
-                id="resident-submit"
+                class="btn btn-md btn-block customBtn--dark-blue"
               >
                 Sign In
               </button>
@@ -199,6 +198,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script>
+      $(function() {
+  $('#residentsLink').click(function() {
+    $('#residentsModal').modal('show');
+  });
+});
+    </script>
   </body>
 </html>

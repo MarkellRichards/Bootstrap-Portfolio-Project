@@ -26,7 +26,7 @@
     <title>Application Login</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue" id="contactNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue" id="other-nav">
       <a class="navbar-brand" href="index.html">
           <img src="img/default-monochrome-white.svg" width="400"  class="d-inline-block align-top" alt="">
      
@@ -58,6 +58,60 @@
       </ul>
     </div>
     </nav>
+<header>
+  <div class="jumbotron jumbotron-fluid  m-0 applicationImg" >
+    <div class="container-fluid" class="p-0 m-0" id="applicationJumbotron">
+    </div>
+  </div>
+</header>
+    <!-- main section -->
+    <main>
+      <section class="applicationLogin">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-center mb-4">
+              <div class="col-md-9">
+                <form class="p-3" id="applicationLoginForm">
+                  <div class="form-row">
+                    <div class="col-12">
+                      <h1 class="text-center mb-3">Login</h1>
+                    </div>
+                  </div>
+                        <div class="form-group col-12">
+                          <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group col-12">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-group col-12 text-center">
+                      <a href="#" class="form-text">Forgot your password?</a>
+                      <a href='register.html' class="form-text">Click here to register</a>
+                    </div>
+               
+                      <div class="form-group col text-center">
+                        <button type="submit" class="btn customBtn customBtn--white btn-lg">Login</button>
+                      </div>
+                </form>
+              </div>
+              
+            </div>
+            <div class="col-md-6">
+              <h2 class="font-weight-bold mb-3">Applications Made Easy</h2>
+              <h5 class="benefits-text">Making an account is free and you can:</h5>
+              <ul class="benefits">
+                <li class="benefit-list"><i class="fa fa-star"></i> Save your application and log in to continue.</li>
+                <li class="benefit-list"><i class="fa fa-star"></i> Check the status of your application.</li>
+                <li class="benefit-list"><i class="fa fa-star"></i> Use your account for different applications.</li>
+              </ul>
+              <a href='#' class="btn btn-md customBtn--dark-blue"><i class="fa fa-arrow-right"></i> Register Now</a>
+            </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <!-- end of main section -->
 
       <!-- Footer Section -->
       <footer class="site-footer">
@@ -131,8 +185,7 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-sm btn-block text-white"
-                id="resident-submit"
+                class="btn btn-md btn-block customBtn--dark-blue"
               >
                 Sign In
               </button>
@@ -166,6 +219,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script>
+      $(function() {
+  $('#residentsLink').click(function() {
+    $('#residentsModal').modal('show');
+  });
+});
+    </script>
   </body>
 </html>
