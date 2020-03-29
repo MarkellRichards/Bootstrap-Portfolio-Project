@@ -1,0 +1,16 @@
+.site-footer {
+  padding: 50px 0;
+  background: $color-dark-blue;
+
+  a {
+    text-transform: uppercase;
+    color: white;
+    padding: 0.6rem;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+}

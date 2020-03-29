@@ -1,0 +1,14 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #eee4db;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}

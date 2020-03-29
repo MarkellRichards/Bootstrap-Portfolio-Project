@@ -1,0 +1,32 @@
+.applicationLogin {
+  background: #eec296;
+  padding: $padding-100;
+}
+
+#applicationLoginForm {
+  background: $color-dark-blue;
+  color: white;
+  box-shadow: 0 20px 40px rgba($color-black, 0.4);
+
+  a {
+    color: #f5bd07;
+    text-decoration: none;
+  }
+}
+
+.benefits {
+  margin-left: 10px;
+  list-style: none;
+  font-weight: 700;
+
+  &-border {
+    border-bottom: 1px solid $color-black;
+  }
+}
+
+.benefits-text {
+  font-weight: 700;
+}
+.benefit-list {
+  padding: 10px 0;
+}

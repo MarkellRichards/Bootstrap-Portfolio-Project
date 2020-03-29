@@ -1,0 +1,75 @@
+#showcase {
+  position: relative;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/Snowy\ mountain\ range.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+// Welcome Section
+.welcome {
+  padding: 100px 0;
+}
+
+.welcome .container {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  background: url('../img/Eagle\ Star\ Properties.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.welcome .content {
+  background: #272635;
+  color: $color-white;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  padding: 20px 30px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.welcome-text {
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .welcome .content {
+    clip-path: none;
+    text-align: center;
+
+    .pTextWrapper {
+      &--1 {
+        width: 100%;
+      }
+      &--2 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Amenities Section
+#ammenities {
+  padding: $padding-100;
+  background-color: #eec296;
+}
+
+//landing contact form
+
+#landingContactForm {
+  background: $color-dark-blue;
+  color: white;
+}
+
+#google-maps {
+  background: black;
+}
+.landingContact {
+  padding: $padding-100;
+}

@@ -1,20 +1,6 @@
-/* You will not need to update any code in this section. */
 body {
-  margin: 0;
   font-family: 'Courier New', Courier, monospace;
   background-color: #eee4db; }
-
-.bg-dark-blue {
-  background-color: #272635 !important; }
-
-.weight-400 {
-  font-weight: 400; }
-
-.weight-700 {
-  font-weight: 700; }
-
-#closeModal {
-  color: #f5bd07; }
 
 a {
   text-decoration: none;
@@ -22,8 +8,32 @@ a {
   a:focus, a:hover {
     text-decoration: none; }
 
-.fa-google {
-  color: white; }
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */ }
+
+.pTextWrapper--1 {
+  width: 85%; }
+
+.pTextWrapper--2 {
+  width: 75%; }
+
+.weight-400 {
+  font-weight: 400; }
+
+.weight-700 {
+  font-weight: 700; }
+
+.border-bottom {
+  border-bottom: 1px solid white; }
+
+.border-right {
+  border-right: 1px solid white; }
+
+.bg-dark-blue {
+  background-color: #272635 !important; }
 
 .secondary-text {
   color: #f5bd07; }
@@ -33,39 +43,6 @@ a {
 
 .light-blue-text {
   color: #e0f4fa; }
-
-#main-nav ul li a {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400; }
-
-#other-nav ul li a {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400; }
-
-.navbar-toggler {
-  border: none;
-  outline: none !important; }
-
-.custom-toggler .navbar-toggler {
-  border: black; }
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
-#showcase {
-  position: relative;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Snowy mountain range.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-
-.vertical-center {
-  min-height: 100%;
-  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh;
-  /* These two lines are counted as one :-)       */ }
 
 .customBtn, .customBtn:link, .customBtn:visited {
   text-transform: uppercase;
@@ -95,6 +72,64 @@ a {
     transform: none;
     background-color: #f5bd07; }
 
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background-color: #e8e9f3; }
+
+#closeModal {
+  color: #f5bd07; }
+
+.fa-google {
+  color: white; }
+
+#main-nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+#other-nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.navbar-toggler {
+  border: none;
+  outline: none !important; }
+
+.custom-toggler .navbar-toggler {
+  border: black; }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.site-footer {
+  padding: 50px 0;
+  background: #272635; }
+  .site-footer a {
+    text-transform: uppercase;
+    color: white;
+    padding: 0.6rem;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none; }
+    .site-footer a:hover {
+      transform: translateY(-3px); }
+
+.headerImg {
+  background: url("../img/More Snowy mountain range.jpg");
+  background-attachment: scroll;
+  background-position: 50% 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  border-bottom: 3px solid #272635; }
+
+#showcase {
+  position: relative;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Snowy mountain range.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
 .welcome {
   padding: 100px 0; }
 
@@ -113,12 +148,8 @@ a {
   padding: 20px 30px;
   height: 100%;
   overflow: hidden; }
-  .welcome .content .pTextWrapper--1 {
-    width: 85%; }
-  .welcome .content .pTextWrapper--2 {
-    width: 75%; }
 
-.welcomeText {
+.welcome-text {
   text-align: left; }
 
 @media screen and (max-width: 767px) {
@@ -131,24 +162,8 @@ a {
       width: 100%; } }
 
 #ammenities {
-  padding: 100px 10px;
+  padding: 6rem 0;
   background-color: #eec296; }
-
-.card {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  background-color: #e8e9f3; }
-
-.site-footer {
-  padding: 50px 0;
-  background: #272635; }
-  .site-footer .container .row .col-md a {
-    text-transform: uppercase;
-    color: white;
-    padding: 0.6rem;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none; }
-    .site-footer .container .row .col-md a:hover {
-      transform: translateY(-3px); }
 
 #landingContactForm {
   background: #272635;
@@ -158,16 +173,10 @@ a {
   background: black; }
 
 .landingContact {
-  padding: 100px 0; }
-
-.border-bottom {
-  border-bottom: 1px solid white; }
-
-.border-right {
-  border-right: 1px solid white; }
+  padding: 6rem 0; }
 
 #contactPage {
-  padding: 100px 0;
+  padding: 6rem 0;
   background: #eec296;
   color: black; }
 
@@ -178,7 +187,7 @@ a {
 
 .applicationLogin {
   background: #eec296;
-  padding: 100px 0; }
+  padding: 6rem 0; }
 
 #applicationLoginForm {
   background: #272635;
@@ -187,15 +196,6 @@ a {
   #applicationLoginForm a {
     color: #f5bd07;
     text-decoration: none; }
-
-.applicationImg {
-  background: url("../img/More Snowy mountain range.jpg");
-  background-attachment: scroll;
-  background-position: 50% 15%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  border-bottom: 3px solid #272635; }
 
 .benefits {
   margin-left: 10px;
@@ -212,8 +212,8 @@ a {
 
 #terms {
   background: white;
-  padding: 50px 0; }
+  padding: 3rem; }
 
 #privacy {
   background: white;
-  padding: 50px 0; }
+  padding: 3rem; }
