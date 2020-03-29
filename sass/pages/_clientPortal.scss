@@ -1,0 +1,27 @@
+#page.toggled #sidebar {
+  margin-left: 0;
+}
+
+#page {
+  background: #eec296;
+  min-width: 100vw;
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+    margin-left: 0;
+  }
+
+  #page-content {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #page.toggled #sidebar {
+    margin-left: -14rem;
+  }
+}
+
+#page nav {
+  background: #eec296;
+}

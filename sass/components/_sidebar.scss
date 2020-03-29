@@ -1,0 +1,13 @@
+#sidebar {
+  min-height: 100vh;
+  margin-left: -14rem;
+  transition: margin 0.5s ease-out;
+
+  .list-group {
+    width: 14rem;
+  }
+
+  .sidebar-heading {
+    padding: 1rem 1.5rem;
+  }
+}

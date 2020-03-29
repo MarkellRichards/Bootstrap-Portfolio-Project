@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <title>Client Portal</title>
+  </head>
+  <body>
+    <div class="d-flex toggled" id="page">
+      <!-- Sidebar -->
+      <div class="bg-dark-blue border-right" id="sidebar">
+        <div class="sidebar-heading">Start Bootstrap</div>
+        <div class="list-group list-group-flush ">
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            >Payments</a
+          >
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            >Request</a
+          >
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            >Announcements</a
+          >
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            >Documentation</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content">
+        <nav class="navbar">
+          <button
+            class="hamburger hamburger--spin"
+            type="button"
+            id="menu-toggle"
+            style="outline: none;"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </nav>
+
+        <div class="container-fluid"></div>
+      </div>
+      <!-- /#page-content -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Menu Toggle Script -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $('#menu-toggle').click(function(e) {
+        e.preventDefault();
+        $('#page').toggleClass('toggled');
+        $('.hamburger').toggleClass('is-active');
+      });
+    </script>
+    <!-- endbuild -->
+  </body>
+</html>
