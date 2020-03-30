@@ -1,13 +1,24 @@
 #sidebar {
   min-height: 100vh;
-  margin-left: -14rem;
+  margin-left: -19rem;
   transition: margin 0.5s ease-out;
 
   .list-group {
-    width: 14rem;
-  }
+    width: 19rem;
 
-  .sidebar-heading {
-    padding: 1rem 1.5rem;
+    a {
+      padding: 15px 30px;
+      display: block;
+      color: rgba(255, 255, 255, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      &:hover {
+        background-color: $color-secondary !important;
+        color: $color-black !important;
+      }
+    }
+
+    .sidebar-heading {
+      padding: 1rem 1.5rem;
+    }
   }
 }
