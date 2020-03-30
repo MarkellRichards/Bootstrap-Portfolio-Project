@@ -1,4 +1,11 @@
 .card {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  background-color: #e8e9f3;
+}
+
+.card-primary {
+  padding: 5rem 4rem;
+}
+
+.card-secondary {
+  padding: 6rem 4rem;
 }

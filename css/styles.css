@@ -36,6 +36,9 @@ a {
 .bg-dark-blue {
   background-color: #272635 !important; }
 
+.bg-grey {
+  background-color: #e8e9f3; }
+
 .secondary-text {
   color: #f5bd07; }
 
@@ -74,8 +77,13 @@ a {
     background-color: #f5bd07; }
 
 .card {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  background-color: #e8e9f3; }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }
+
+.card-primary {
+  padding: 5rem 4rem; }
+
+.card-secondary {
+  padding: 6rem 4rem; }
 
 #closeModal {
   color: #f5bd07; }
