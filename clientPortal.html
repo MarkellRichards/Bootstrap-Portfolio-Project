@@ -17,97 +17,161 @@
     <title>Client Portal</title>
   </head>
   <body>
-    <div class="d-flex toggled" id="page">
-      <!-- Sidebar -->
-      <div class="bg-dark-blue border-right" id="sidebar">
-        <div class="sidebar-heading">Start Bootstrap</div>
-
-        <div
-          class="img bg-wrap text-center py-4"
-          style="background-image: url(img/More\ Snowy\ mountain\ range.jpg);"
-        >
-          <div class="user-logo">
-            <div class="img" style="background-image: url(img/logo.jpg);"></div>
-            <h3>User Name</h3>
+    <div class="site-wrapper">
+      <div class="site-wrapper__header">
+        <div class="global-header">
+          <div class="global-header__logo-container d-block d-lg-none">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3332948/default-monochrome-white_copy.svg"
+              alt="Logo"
+              height="auto"
+              width="300px"
+            />
+          </div>
+          <div class="global-header__account-section d-none d-lg-block">
+            <div class="dropdown">
+              <button class="btn customBtn--dark-blue dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div class="global-header__responsive-nav">
+            <div class="mobile-nav-header d-block d-lg-none">
+              <button
+              class="hamburger hamburger--spin"
+              type="button"
+              id="menu-toggle"
+              style="outline: none;"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            </div>
+            <div class="mobile-nav-menu">
+              <ul class="mobile-nav-list list-unstyled">
+                <li class="mobile-nav-menu__item">
+                  <a href="#" class="mobile-nav-menu__link"><i class="fa fa-home fa-2x"></i> Dashboard</a>
+                </li>
+                <li class="mobile-nav-menu__item">
+                  <a href="#" class="mobile-nav-menu__link"><i class="fa fa-user fa-2x"></i> Account</a>
+                </li>
+                <hr>
+                <li class="mobile-nav-menu__item">
+                  <a href="#" class="mobile-nav-menu__link"><i class="fa fa-credit-card fa-2x"></i> Payments</a>
+                </li>
+                <li class="mobile-nav-menu__item">
+                  <a href="#" class="mobile-nav-menu__link"><i class="fa fa-wrench fa-2x"></i> Request</a>
+                </li>
+                <li class="mobile-nav-menu__item">
+                  <a href="#" class="mobile-nav-menu__link"><i class="fa fa-bullhorn fa-2x"></i> Announcements</a>
+                </li>
+                <li class="mobile-nav-menu__item">
+                  <a href="#" class="mobile-nav-menu__link"><i class="fa fa-print fa-2x"></i> Documentation</a>
+                </li>
+                <hr>
+                <li class="mobile-nav-menu__item">
+                  <a href="#" class="mobile-nav-menu__link">Sign Out</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <ul class="list-group list-group-flush text-left p-0 ">
-          <li>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action bg-dark-blue text-white"
-              ><i class="fa fa-tachometer"></i> Dashboard</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action bg-dark-blue text-white"
-              ><i class="fa fa-credit-card"></i> Payments</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action bg-dark-blue text-white"
-              ><i class="fa fa-wrench"></i> Request</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action bg-dark-blue text-white"
-              ><i class="fa fa-bullhorn"></i> Announcements</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action bg-dark-blue text-white"
-              ><i class="fa fa-print"></i> Documentation</a
-            >
-          </li>
-        </ul>
       </div>
-      <!-- /#sidebar-wrapper -->
+      <div class="site-wrapper__nav">
+       <div class="site-wrapper__nav--logo d-flex justify-content-center">
+        <img
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3332948/default-monochrome-white_copy.svg"
+        alt="Logo"
+        height="auto"
+        width="280px"
+      />
+       </div> 
 
-      <!-- Page Content -->
-      <div id="page-content">
-        <nav class="navbar">
-          <button
-            class="hamburger hamburger--spin"
-            type="button"
-            id="menu-toggle"
-            style="outline: none;"
+        <div
+        class="img bg-wrap text-center py-4"
+        style="background-image: url(img/More\ Snowy\ mountain\ range.jpg);"
+      >
+        <div class="user-logo">
+          <div class="img" style="background-image: url(img/man-portrait-silhouette.gif);"></div>
+          <h3>User Name</h3>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush text-left p-0 ">
+        <li>
+          <a
+            href="#"
+            class=" bg-dark-blue text-white"
+            ><i class="fa fa-tachometer"></i> Dashboard</a
           >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        </nav>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            ><i class="fa fa-credit-card"></i> Payments</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            ><i class="fa fa-wrench"></i> Request</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            ><i class="fa fa-bullhorn"></i> Announcements</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            ><i class="fa fa-print"></i> Documentation</a
+          >
+        </li>
 
-        <div class="container">
+        <li>
+          <a
+            href="#"
+            class="list-group-item list-group-item-action bg-dark-blue text-white"
+            >Sign out</a
+          >
+        </li>
+      </ul>
+    </div>
+      </div>
+      <div class="site-wrapper__content">
+        <div class="container-fluid mb-5">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 ">
               <div class="card card-primary">
                 <div class="row">
-                  <div class="col-lg-7">
-                    <h3>Your current balance is</h3>
-                    <h4>$0.00</h4>
+                  <div class="col-lg-7 mb-3">
+                    <h3>Your current balance is <span class="d-inline d-lg-block" id='balance'>$0.00</span></h3>
+                    
                   </div>
                   <div class="col-lg-5">
-                    <div class="text-right">
+                    <div class="text-center">
                       <div class="col-12">
                         <a
                           href="#"
-                          class="btn customBtn customBtn--dark-blue ml-auto mb-3"
+                          class="btn btn-block customBtn customBtn--dark-blue ml-auto mb-3"
                           >Make a payment</a
                         >
                       </div>
                       <div class="col-12">
                         <a
                           href="#"
-                          class="btn customBtn customBtn--dark-blue ml-auto mb-3"
+                          class="btn btn-block customBtn customBtn--dark-blue ml-auto mb-3"
                           >Set Up Autopay</a
                         >
                       </div>
@@ -118,58 +182,102 @@
             </div>
             <div class="col-lg-6">
               <div class="card card-secondary mt-4">
+                <div class="card-header">
+                  Open Request
+                </div>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    Open Request
-                  </h4>
+                  
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="card card-secondary mt-4">
+                       <div class="card-header">
+                Announcements
+                </div>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    Announcements
-                  </h4>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="card card-secondary mt-4">
+                       <div class="card-header">
+                  Lease Information
+                </div>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    Lease Information
-                  </h4>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="card card-secondary mt-4">
+              <div class="card card-secondary mt-4" id=#contactCard>
+                       <div class="card-header">
+                Contact Us
+                </div>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    Contact Us
-                  </h4>
+                    <div class="row row-content align-items-center">
+        <div class="col-sm-4">
+          <h5>Our Address</h5>
+          <address>
+            3990 Madison Ave<br />
+            South Ogden, UT 84403<br />
+            U.S.A.
+          </address>
+        </div>
+        <div class="col">
+          <a role="button" class="btn btn-link" href="tel:+11234567890"
+            ><i class="fa fa-phone"></i> 1-123-456-7890<br
+          /></a>
+          <a
+            role="button"
+            class="btn btn-link"
+            href="support@eaglestarproperties.com"
+            ><i class="fa fa-envelope-o"></i> support@eaglestarproperties.com</a
+          >
+        </div>
+      </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- /#page-content -->
+      </div>
     </div>
-    <!-- /#wrapper -->
-    <!-- Menu Toggle Script -->
+
+    <!-- Footer Section
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row justify-content-start">
+           <div class="col-md d-flex justify-content-center col">
+            <a href="termsandconditions.html">Terms And Conditions</a>
+           </div>
+           <div class="col-md d-flex justify-content-center col">
+            <a href="privacy.html">Privacy Policy</a>
+           </div>
+        </div>
+      </div>
+    </footer> -->
+
+
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
     <script>
       $('#menu-toggle').click(function(e) {
         e.preventDefault();
-        $('#page').toggleClass('toggled');
+        $('.mobile-nav-menu').toggleClass('mobile-nav-menu--open');
         $('.hamburger').toggleClass('is-active');
       });
     </script>
+<script>
+  $(document).ready(function(){
+    $(".dropdown-toggle").dropdown();
+  });
+  </script>
+
     <!-- endbuild -->
   </body>
 </html>

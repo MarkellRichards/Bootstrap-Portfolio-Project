@@ -8,17 +8,18 @@
 @import 'components/cards';
 @import 'components/modals';
 @import 'components/sidebar';
+@import 'components/userImg';
 
 @import 'layout/navigation';
 @import 'layout/footer';
 @import 'layout/headerImg';
+@import 'layout/mobile-nav';
+@import 'layout/site-wrapper';
 
 @import 'pages/home';
 @import 'pages/contact';
 @import 'pages/application';
 @import 'pages/terms';
 @import 'pages/privacy';
-@import 'pages/clientPortal';
-@import 'pages/clientPortalCopy';
 
 @import 'vendors/hamburgers.scss';
