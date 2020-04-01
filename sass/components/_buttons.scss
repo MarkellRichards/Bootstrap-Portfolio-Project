@@ -23,6 +23,16 @@
       color: $color-dark-blue;
       background-color: $color-secondary;
     }
+    &--no-translate {
+      background-color: #272635;
+      color: $color-white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-dark-blue;
+        background-color: $color-secondary;
+      }
+    }
   }
 
   &--white {

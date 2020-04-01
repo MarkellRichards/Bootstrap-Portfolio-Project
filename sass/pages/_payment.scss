@@ -1,0 +1,20 @@
+#paymentSection {
+  background: $color-white;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1198px) {
+  #paymentCard {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .col-xl-4 {
+    padding: 0;
+  }
+
+  #late-fee-card {
+    margin-top: 1rem;
+    padding: 0;
+  }
+}

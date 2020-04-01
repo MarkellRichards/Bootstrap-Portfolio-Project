@@ -67,6 +67,13 @@ a {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     color: #272635;
     background-color: #f5bd07; }
+  .customBtn--dark-blue--no-translate {
+    background-color: #272635;
+    color: white;
+    transition: all 0.3s ease-in-out; }
+    .customBtn--dark-blue--no-translate:hover {
+      color: #272635;
+      background-color: #f5bd07; }
 
 .customBtn--white {
   background-color: white;
@@ -85,6 +92,9 @@ a {
 .card-header {
   background-color: #272635;
   color: white; }
+
+#paymentCard {
+  padding: 1rem; }
 
 #closeModal {
   color: #f5bd07; }
@@ -152,6 +162,10 @@ a {
   .bg-wrap .user-logo h3 {
     color: white;
     font-size: 18px; }
+
+thead {
+  background-color: #272635;
+  color: white; }
 
 #main-nav ul li a {
   color: white;
@@ -380,6 +394,20 @@ a {
 #privacy {
   background: white;
   padding: 3rem; }
+
+#paymentSection {
+  background: white;
+  padding: 1rem; }
+
+@media screen and (max-width: 1198px) {
+  #paymentCard {
+    margin-top: 1rem;
+    padding: 1rem; }
+  .col-xl-4 {
+    padding: 0; }
+  #late-fee-card {
+    margin-top: 1rem;
+    padding: 0; } }
 
 /*!
  * Hamburgers
