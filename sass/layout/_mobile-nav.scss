@@ -45,6 +45,7 @@
 
 .mobile-nav-menu__link {
   color: $color-dark-blue;
+  display: block;
   &,
   &:focus {
     text-decoration: none;
